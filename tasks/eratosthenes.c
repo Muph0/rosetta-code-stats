@@ -34,7 +34,7 @@ eratosthenes(int n, int *c)
 
 int task_main()
 {
-    int N = 100000;
+    int N = 1000000;
     int count;
     char *sieve = eratosthenes(N, &count);
 

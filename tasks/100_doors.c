@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define DOORS 100000 // increased the number of doors to run longer
+#define DOORS 400000 // increased the number of doors to run longer
 
 int task_main()
 {

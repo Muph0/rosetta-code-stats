@@ -14,8 +14,8 @@ static long delta_usec(struct timeval* start, struct timeval* stop)
            + (stop->tv_usec - start->tv_usec);
 }
 
-#define SAMPLES 25
-#define OUTFILE "/dev/null" //OUTDIR "/" TASK_NAME ".out"
+#define SAMPLES 250
+#define OUTFILE "/dev/null" // OUTDIR "/" TASK_NAME ".out"
 
 int main()
 {
