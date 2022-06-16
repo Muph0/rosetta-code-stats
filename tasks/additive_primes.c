@@ -58,28 +58,28 @@ int sumOfDecimalDigits( int n )
 
 int task_main( void )
 {
-    const int N = 500000;
 
-    printf( "Rosetta Code: additive primes less than %d:\n", N );
+    const int N = 500000;
+    // printf( "Rosetta Code: additive primes less than %d:\n", N );
 
     bool is_prime[N];
     memset( is_prime, 0, sizeof(is_prime) );
     memoizeIsPrime( is_prime, N );
 
-    printf( "   2" );
+    // printf( "   2" );
     int count = 1;
     for (int i = 3; i < N; i += 2)
     {
         if (is_prime[i] && is_prime[sumOfDecimalDigits( i )])
         {
-            printf( "%4d", i );
+            // printf( "%4d", i );
             ++count;
             if ((count % 10) == 0)
             {
-                printf( "\n" );
+                // printf( "\n" );
             }
         }
     }
-    printf( "\nThose were %d additive primes.\n", count );
+    // printf( "\nThose were %d additive primes.\n", count );
     return 0;
 }/* main */

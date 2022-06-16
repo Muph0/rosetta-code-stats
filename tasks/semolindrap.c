@@ -71,11 +71,12 @@ int task_main(void)
             strcpy(tmp, drows[i]);
             reverse(tmp, strlen(tmp));
             /* Unless it was a palindrome. */
-            if (strcmp(drows[i], tmp) > 0 && sem++ < 5)
-                printf("%s\t%s\n", drows[i], tmp);
+            if (strcmp(drows[i], tmp) > 0 && sem++ < 5) {
+                // printf("%s\t%s\n", drows[i], tmp);
+            }
         }
     }
 
-    printf("Semordnilap pairs: %d\n", sem);
+    // printf("Semordnilap pairs: %d\n", sem);
     return 0;
 }

@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define DOORS 300000 // increased the number of doors to run longer
+#define DOORS 100000 // increased the number of doors to run longer
 
 int task_main()
 {
@@ -30,8 +30,8 @@ int task_main()
             is_open[door] = !is_open[door];
 
     /* output the result */
-    for (door = 0; door < DOORS; ++door)
-        printf("door #%d is %s.\n", door + 1, (is_open[door] ? "open" : "closed"));
+    // for (door = 0; door < DOORS; ++door)
+    //     printf("door #%d is %s.\n", door + 1, (is_open[door] ? "open" : "closed"));
 
     free(is_open);
 
