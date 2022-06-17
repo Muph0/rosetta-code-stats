@@ -4,10 +4,17 @@ Suite for measuring runtime of various [rosetta-code tasks](https://rosettacode.
 
 ## Usage
 
-To build all tasks, run `./build-tasks.sh`. You may specify additional compile flags, i.e. `-O2`.
+### `./build-tasks.sh [cflags]`
+Build all task producing executables in `out/`.
+- `cflags` (optional) - Additional flags passed to the compiler.
 
-To generate runtime data for current build, run `./run-measure.sh`.
+### `./run-measure.sh [n-samples]`
+Run all tasks and measure their runtime. Outputs to `out/<task-name>.csv`.
+- `n-samples` (optional) - Number of samples to collect for each task.
 
-To generate runtime data for all optimization levels run `./generate-data.sh` and collect `out/data.csv` with the results.
+### `./generate-data.sh [n-samples]`
+Build all tasks for each `-O` level. Outputs to `out/data.csv`.
+- `n-samples` (optional) - Number of samples to collect for each task.
+
 
 
